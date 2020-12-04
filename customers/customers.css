@@ -1,0 +1,81 @@
+main {
+    padding: 1rem 0;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial {
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    width: 55%;
+    background-image: linear-gradient(to right, rgb(126, 218, 126) 2%, transparent);
+}
+
+article:first-child > .testimonial {
+    text-align: right;
+    border-right: 5px solid darkgreen;
+}
+article:last-child > .testimonial {
+    text-align: left;
+    border-left: 5px solid darkgreen;
+}
+
+
+.testimonial-title {
+    font-size: 2.5rem;
+    color: rgb(233, 58, 58);   
+    /* rgb(126, 218, 126) */
+}
+.testimonial-subtitle {
+    font-size: 1rem;
+    color: rgba(128, 128, 128, 1);
+    font-weight: bold;
+}
+.testimonial-subtitle a {
+    color: darkgreen;
+    text-decoration: underline;
+}
+.testimonial p {
+    padding-top: 0.5rem;
+    font-weight: normal;
+}
+
+article {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.img-holder {
+    width: 40%;
+    min-width: 300px;
+}
+
+.testimonial-image {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 3px 3px 2px 2px lightgray;
+}
+.testimonial-image:hover, .testimonial-image:focus {
+    filter: grayscale(80%);
+}
+
+/* For phones/phablet */
+@media all and (max-width: 600px) {
+
+    .img-holder, .testimonial {
+       width: 90%;
+    }
+}
+
+
+/* For tablets */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+    }
+}

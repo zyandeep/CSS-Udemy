@@ -1,0 +1,89 @@
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background-img {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../image/plans-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    z-index: -1;
+    filter: opacity(60%);
+    /* opacity: 0.6; */
+}
+
+section {
+    border: 3px solid darkgreen;
+    width: 60vw;
+    margin: 0.5rem 0;
+    padding: 1.5rem 3rem;
+    background-color: rgba(201, 245, 201, 0.9);
+
+}
+section:hover, section:focus {
+    box-shadow: 4px 4px 4px 4px gray;
+    border: 3px solid rgb(233, 58, 58);;
+}
+
+section a {
+    text-decoration: none;
+}
+
+.package-title {
+    color: black;
+    padding: 1rem 0;
+}
+.package-subtitle {
+    color: rgb(128, 128, 128);
+}
+.package-subtitle + p {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid darkgreen;
+    color: darkgreen;
+    background-color: white;
+    font-weight: 900;
+    font-style: italic;
+    text-shadow: 5px 5px 5px lightgray;
+}
+
+main section:nth-child(2) {
+    align-self: flex-end;
+    text-align: end;
+}
+main section:last-child {
+    background-color: rgba(0, 100, 0, 0.9);
+}
+main section:last-child .package-title {
+    color: white;
+}
+main section:last-child .package-subtitle {
+    color: rgb(185, 185, 185);
+}
+
+.badge {
+    background-color: rgb(233, 58, 58);
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: medium;
+    padding: 0.5rem 1rem;
+    transform: rotateZ(45deg) translateX(3rem) translateY(0.3rem)
+}
+
+main section:first-child {
+    position: relative;
+    overflow: hidden;
+}

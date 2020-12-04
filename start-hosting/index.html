@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>uHost</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="./hosting.css">
+    <script src="../app.js" defer></script>
+</head>
+
+<body>
+    <!-- Backdrop -->
+    <div class="backdrop"></div>
+
+    <section class="model">
+        <h1>Do You Want to <br> Continue ?</h1>
+
+        <div class="model-panel">
+            <a href="./index.html">Yes!</a>
+            <button>No!</button>
+        </div>
+    </section>
+
+
+    <header>
+        <h2>
+            <img src="../image/menu-icon.svg" alt="menu icon" class="menu-icon">
+
+            <a href="/">
+                <img src="../image/uhost-icon.png" alt="uHost Logo">
+            </a>
+        </h2>
+        <nav class="desktop-nav">
+            <ul>
+                <li>
+                    <a href="../packages/">Packages</a>
+                </li>
+                <li>
+                    <a href="../customers/">Customers</a>
+                </li>
+                <li>
+                    <a href="./index.html" class="cta-btn">Start Hosting</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- SideNav for mobile -->
+    <nav class="mobile-nav hide-sidenav-menu">
+        <ul>
+            <li>
+                <a href="../packages/">Packages</a>
+            </li>
+            <li>
+                <a href="../customers/">Customers</a>
+            </li>
+            <li>
+                <a href="./index.html" class="cta-btn">Start Hosting</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Awesome! Let's dive right in!</h1>
+
+        <form action="" method="post">
+            <label for="title">Title</label>
+            <select id="title">
+                <option value="mr">Mr.</option>
+                <option value="mrs">Mrs.</option>
+                <option value="ms">Ms.</option>
+            </select>
+
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name">
+            <label for="first-name">Email</label>
+            <input type="email" id="email" autocomplete="off">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+
+            <input type="checkbox" id="i-agree">
+            <label for="i-agree">
+                I Agree to <a href="#">Terms and Conditions</a>
+            </label>
+
+            <button type="submit">Sign Up</button>
+
+
+
+        </form>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <a href="#">Terms of Use</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

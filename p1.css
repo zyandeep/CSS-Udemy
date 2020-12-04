@@ -1,0 +1,27 @@
+body {
+    font-family: serif;
+}
+h1 {
+    color: rebeccapurple;
+    font-family: Arial, Helvetica, sans-serif;
+}
+code {
+    color: red;
+    font-family: monospace;
+}
+
+li:nth-child(2) code {
+    color: darkgreen;
+    font-family: inherit;
+}
+
+/* n starts from 0 */
+li:nth-child(n+2) {
+    background-color: black;
+    color: whitesmoke;
+}
+
+ol li {
+    background-color: gray;
+    color: black;
+}
